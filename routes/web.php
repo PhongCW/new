@@ -16,3 +16,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post("/login", "App\Http\Controllers\UserController@login");
+
+Route::get("/ShowStaffListScreen", "App\Http\Controllers\UserController@ShowStaffListScreen");
+
+Route::post("/DeleteStaff", "App\Http\Controllers\UserController@DeleteStaff");
+
+Route::post("/StaffCreate", "App\Http\Controllers\UserController@StaffCreate");
+
+Route::post("/Staff_Detail_Edit", "\App\Http\Controllers\UserController@Staff_Detail_Edit");
+
+
